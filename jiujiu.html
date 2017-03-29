@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table id="table">
+
+</table>
+
+</body>
+<script type="text/javascript">
+var str='<table>';
+	for (var i = 1; i <= 9; i++) {
+		// console.log(i);
+ 		str+='<tr>';
+		for (var j = 1; j <= i; j++) {
+			console.log(j);
+			str+="<td>"+i+"*"+j+"="+(i*j)+"</td>";
+		}
+		str +='</tr>'
+	}
+str+='</table>'
+document.write(str);
+</script>
+</html>
